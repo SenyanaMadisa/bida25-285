@@ -49,11 +49,11 @@
 
             <div class="progress">
 
-                <div class="fill" style="width:80%"></div>
+                <div class="fill" style="width:96%"></div>
 
             </div>
 
-            <span>989</span>
+            <span>56</span>
 
         </div>
 
@@ -67,7 +67,7 @@
 
             </div>
 
-            <span>4.5K</span>
+            <span>26</span>
 
         </div>
 
@@ -77,11 +77,11 @@
 
             <div class="progress">
 
-                <div class="fill" style="width:20%"></div>
+                <div class="fill" style="width:70%"></div>
 
             </div>
 
-            <span>50</span>
+            <span>17</span>
 
         </div>
 
@@ -91,11 +91,11 @@
 
             <div class="progress">
 
-                <div class="fill" style="width:10%"></div>
+                <div class="fill" style="width:27%"></div>
 
             </div>
 
-            <span>16</span>
+            <span>1</span>
 
         </div>
 
@@ -105,17 +105,16 @@
 
             <div class="progress">
 
-                <div class="fill" style="width:5%"></div>
+                <div class="fill" style="width:0%"></div>
 
             </div>
 
-            <span>8</span>
+            <span>0</span>
 
         </div>
 
     </div>
 
-    <!-- RIGHT: OVERALL RATING -->
 
     <div class="overall-rating">
 
@@ -123,7 +122,7 @@
 
         <p>⭐⭐⭐⭐</p>
 
-        <p>50 Ratings</p>
+        <p>5 Ratings</p>
 
     </div>
 
@@ -155,7 +154,7 @@
 
             <div>
 
-                <h4>MARANG MADISA ⭐⭐⭐⭐⭐</h4>
+                <h4>MARANG SUMMER ⭐⭐⭐</h4>
 
                 <p>Best restaurant experience ever.</p>
 
@@ -177,6 +176,34 @@
 
         </div>
 
+        <div class="review-card">
+
+            <img src="user4.JPEG">
+
+            <div>
+
+                <h4>PHILLIP MOLEMI ⭐⭐⭐</h4>
+
+                <p>Good food,good service.</p>
+
+            </div>
+
+        </div>
+
+        <div class="review-card">
+
+            <img src="user5.JPEG">
+
+            <div>
+
+                <h4>NAMETSO EZRA ⭐⭐</h4>
+
+                <p>Great aesthetics but prolonged waiting time for food.</p>
+
+            </div>
+
+        </div>
+
     </div>
 
     <!-- RIGHT SIDE: FORM -->
@@ -186,6 +213,14 @@
         <h2>Add a Review</h2>
 
         <form onsubmit="showMessage(); return false;">
+            <label>Add your rating*</label>
+            <div class="star rating">
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+            </div>
 
             <input type="text" placeholder="Name" required>
 
@@ -214,6 +249,26 @@ function showMessage() {
     alert("Thank you for your feedback!");
 
 }
+
+</script>
+
+<script>
+
+const stars = document.querySelectorAll(".star-rating span");
+
+stars.forEach((star, index) => {
+
+    star.addEventListener("click", () => {
+
+        stars.forEach((s, i) => {
+
+            s.style.color = i <= index ? "#f4b400" : "#ccc";
+
+        });
+
+    });
+
+});
 
 </script>
 
