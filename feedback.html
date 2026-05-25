@@ -1,131 +1,185 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bulgogi Bites|Feedback</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulgogi Bites|Home</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
 
 <body>
 
 <header>
 
-    <h1>Bulgogi Bites Restaurant</h1>
+    <h1>Bulgogi Bites</h1>
 
     <nav>
 
         <a href="index.html">Home</a>|
+
         <a href="menu.html">Menu</a>|
+
         <a href="about.html">About</a>|
+
         <a href="contact.html">Contact</a>|
-        <a href="gallery.html">Gallery</a>|
-        < a href="feedback.html">Feedback</a>
+        
+        <a href="feedback.html">Feedback</a>
 
     </nav>
 
 </header>
 
-<main class="feedback-container">
+<section class="feedback-page">
 
-    <div class="reviews">
 
-        <h2>Recent Feedbacks</h2>
+    <div class="top-feedback">
 
-        <div class="review-card">
+        <div class="rating-bars">
 
-            <img src="KEITH.JPEG">
+            <p>FIVE ⭐ <span class="bar"></span></p>
 
-            <div>
+            <p>FOUR ⭐ <span class="bar"></span></p>
 
-                <h4>KEITH KENTSHITSWE⭐⭐⭐⭐</h4>
+            <p>THREE ⭐ <span class="bar"></span></p>
 
-                <p>Amazing food and great service!</p>
+            <p>TWO ⭐ <span class="bar"></span></p>
 
-            </div>
-
-        </div>
-
-        <div class="review-card">
-
-            <img src="user2.JPEG">
-
-            <div>
-
-                <h4>MARANG SUMMER⭐⭐⭐⭐⭐</h4>
-
-                <p>Best restaurant experience ever.</p>
-
-            </div>
+            <p>ONE ⭐ <span class="bar"></span></p>
 
         </div>
 
-        <div class="review-card">
+        <div class="rating-box">
 
-            <img src="user3.JPEG">
+            <h2>4.3</h2>
 
-            <div>
+            <div class="stars">
 
-                <h4>NONOFO MOKWENA⭐⭐⭐⭐⭐</h4>
-
-                <p>The customer service is out of this world. Definitely coming back.</p>
+                ⭐⭐⭐⭐⭐
 
             </div>
 
-        </div>
-
-        <div class="review-card">
-
-            <img src="user4.JPEG">
-
-            <div>
-
-                <h4>PHILLIP MOLEMI⭐⭐⭐⭐⭐</h4>
-
-                <p>If you are looking for food and experience that's worth your money then this is the spot.</p>
-
-            </div>
+            <p>50 Ratings</p>
 
         </div>
 
     </div>
 
-    <div class="review-form">
+    <!-- BOTTOM -->
 
-        <h2>Add a Review</h2>
+    <div class="bottom-feedback">
 
-        <form onsubmit="showMessage(); return false;">
+        <!-- REVIEWS -->
 
-            <input type="text" placeholder="Name" required>
+        <div class="reviews">
 
-            <input type="email" placeholder="Email" required>
+            <h2>Recent Feedbacks</h2>
 
-            <textarea placeholder="Write your review..." required></textarea>
+            <div class="review-card">
 
-            <button type="submit">Submit</button>
+                <img src="user2.JPEG">
 
-        </form>
+                <div>
+
+                    <h3>MARANG SUMMER</h3>
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                    <p>Amazing food and service.</p>
+
+                </div>
+
+            </div>
+
+            <div class="review-card">
+
+                <img src="KEITH.JPEG">
+
+                <div>
+
+                    <h3>KEITH SAMUELS</h3>
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                    <p>Best Korean food ever.</p>
+
+                </div>
+
+            </div>
+            
+            <div class="review-card">
+
+                <img src="user3.JPEG">
+
+                <div>
+
+                    <h3>NONOFO MADISA</h3>
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                    <p>Amazing...totally recommend the restaurant.</p>
+
+                </div>
+
+            </div>
+
+            <div class="review-card">
+
+                <img src="user4.JPEG">
+
+                <div>
+
+                    <h3>PHILLIP MOLEMI</h3>
+
+                    <p>⭐⭐⭐⭐⭐</p>
+
+                    <p>Home away from home....</p>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="review-form">
+
+            <h2>Add a Review</h2>
+
+            <p>Add Your Rating *</p>
+
+            <div class="select-stars">
+
+                ⭐⭐⭐⭐⭐
+
+            </div>
+
+            <form>
+
+                <input type="text" placeholder="Name">
+
+                <input type="email" placeholder="Email">
+
+                <textarea placeholder="Write your review"></textarea>
+
+                <button type="submit">
+
+                    Submit
+
+                </button>
+
+            </form>
+
+        </div>
 
     </div>
 
-</main>
-
-<footer>
-
-    <p>&copy; 2026 Bulgogi Bites</p>
-
-</footer>
-
-<script>
-
-function showMessage() {
-
-    alert("Thank you for your feedback!");
-
-}
-
-</script>
+</section>
 
 </body>
 
